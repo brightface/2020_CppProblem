@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1082
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "algo20200831", "algo20200831\algo20200831.vcxproj", "{1778CC89-CD2F-441F-8B40-D498CCDC2FBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1778CC89-CD2F-441F-8B40-D498CCDC2FBC}.Debug|x64.ActiveCfg = Debug|x64
+		{1778CC89-CD2F-441F-8B40-D498CCDC2FBC}.Debug|x64.Build.0 = Debug|x64
+		{1778CC89-CD2F-441F-8B40-D498CCDC2FBC}.Debug|x86.ActiveCfg = Debug|Win32
+		{1778CC89-CD2F-441F-8B40-D498CCDC2FBC}.Debug|x86.Build.0 = Debug|Win32
+		{1778CC89-CD2F-441F-8B40-D498CCDC2FBC}.Release|x64.ActiveCfg = Release|x64
+		{1778CC89-CD2F-441F-8B40-D498CCDC2FBC}.Release|x64.Build.0 = Release|x64
+		{1778CC89-CD2F-441F-8B40-D498CCDC2FBC}.Release|x86.ActiveCfg = Release|Win32
+		{1778CC89-CD2F-441F-8B40-D498CCDC2FBC}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7BA82A61-7B67-47DA-85B5-8A286084580A}
+	EndGlobalSection
+EndGlobal
