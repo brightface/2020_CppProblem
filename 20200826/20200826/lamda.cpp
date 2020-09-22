@@ -53,24 +53,24 @@ int main()
 	auto lamda5 = [](int a, int b) 
 	{
 		cout << a + b << endl;
-	}/*(10, 20);*/;
+	}/*(10, 20)*/;
 	lamda5(10, 20); //따로 해줘야함.
 	/////////////////////////////////////////////////////////////
 
 	int c = 10;
 	[=](int a, int b) ->void
 	{
-		cout << a + b +c<< endl;
+		cout << a + b +c << endl;
 	}(10, 20); //lamda(10,20);
 	//메인코드 다 변수 캡처해서 가져옴
 	//call by value
 
-	
-	[c](int a, int b) ->void
-	{
-		cout << a + b + c << endl;
-	}(10, 20); //lamda(10,20);
-	//callby value
+	//
+	//[c](int a, int b) ->void
+	//{
+	//	cout << a + b + c << endl;
+	//}(10, 20); //lamda(10,20);
+	////callby value
 
 	//int c = 10;
 	[&c](int a, int b) ->void
@@ -79,19 +79,19 @@ int main()
 	}(10, 20); //lamda(10,20);
 	//callby reference
 
-	//int c = 10;
-	//[&](int a, int b) ->void
-	//{
-	//	cout << a + b + c << endl;
-	//}(10, 20); //lamda(10,20);
-	////callby reference -모든 변수 레퍼런스로 가져온다.
-
-	//int c = 10;
-	[&](int a, int b)
+	////int c = 10;
+	[&](int a, int b) ->void
 	{
 		cout << a + b + c << endl;
-		return a;//알아서 반환형이 int 로 잡아준다.
 	}(10, 20); //lamda(10,20);
 	//callby reference -모든 변수 레퍼런스로 가져온다.
+
+	////int c = 10;
+	//[&](int a, int b)
+	//{
+	//	cout << a + b + c << endl;
+	//	return a;//알아서 반환형이 int 로 잡아준다.
+	//}(10, 20); //lamda(10,20);
+	////callby reference -모든 변수 레퍼런스로 가져온다.
 
 }
