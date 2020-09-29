@@ -92,12 +92,22 @@ class BinaryTree
 	public:
 		struct Node
 		{
-			char data;
+			//노드의 포인터 이걸로 핡어ㅑ.
+			char* data;
+			//char data;
 			//Node* Parent;//이건 양방향. 배열에 비해서 12바이트가 잡히네;;
 			Node* left = nullptr;
 			Node* right = nullptr;
+		
+			~Node()
+			{
+				delete[] data;
+			}
 		};
-		static Node* CreateNode(char data)
+		//메모리 누수 되겠지. 잡아주자
+		
+		
+		static Node* CreateNode(char* data)
 		{
 			Node* node = new Node();
 			node->data = data;
